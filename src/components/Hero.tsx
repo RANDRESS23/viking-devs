@@ -8,7 +8,7 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <section className="h-screen relative flex flex-col justify-center items-center font-inter-sans">
-      <div>
+      <div className='hidden md:block'>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="#F29F05"
