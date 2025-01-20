@@ -45,7 +45,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider my-3 text-sm md:text-lg lg:text-2xl text-[#8C1C03]">
-            En Viking Devs, creamos tecnología que impulsa tu éxito empresarial.
+            En <span className='text-[#F24405] font-bold'>Viking Devs</span>, creamos tecnología que impulsa tu éxito empresarial.
           </p>
 
           <Link href="#">
