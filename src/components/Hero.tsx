@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="h-screen w-full dark:bg-[#ffeebd] bg-white dark:bg-grid-white/50 bg-grid-black-100/[0.2]
+        className="h-screen w-full dark:bg-[#ffeebd] bg-white dark:bg-grid-white/20 bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
       >
         <div
