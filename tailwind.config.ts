@@ -20,19 +20,20 @@ export default {
     },
     extend: {
       fontFamily: {
-        'inter-sans': ['var(--font-inter)']
+        'inter-sans': ['var(--font-inter)'],
+        'norse-sans': ['var(--font-norse)']
       },
       colors: {
         black: {
-          DEFAULT: '#000',
           100: '#000319',
           200: 'rgba(17, 25, 40, 0.75)',
-          300: 'rgba(255, 255, 255, 0.125)'
+          300: 'rgba(255, 255, 255, 0.125)',
+          DEFAULT: '#000'
         },
         white: {
-          DEFAULT: '#FFF',
           100: '#BEC1DD',
-          200: '#C1C2D3'
+          200: '#C1C2D3',
+          DEFAULT: '#FFF'
         },
         blue: {
           100: '#E4ECFF'
@@ -70,6 +71,13 @@ export default {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
+        },
+        chart: {
+          1: 'hsl(var(--chart-1))',
+          2: 'hsl(var(--chart-2))',
+          3: 'hsl(var(--chart-3))',
+          4: 'hsl(var(--chart-4))',
+          5: 'hsl(var(--chart-5))'
         }
       },
       borderRadius: {
@@ -79,12 +87,20 @@ export default {
       },
       keyframes: {
         'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' }
+          from: {
+            height: '0'
+          },
+          to: {
+            height: 'var(--radix-accordion-content-height)'
+          }
         },
         'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' }
+          from: {
+            height: 'var(--radix-accordion-content-height)'
+          },
+          to: {
+            height: '0'
+          }
         },
         spotlight: {
           '0%': {
@@ -143,11 +159,74 @@ export default {
           }
         },
         meteor: {
-          '0%': { transform: 'rotate(215deg) translateX(0)', opacity: '1' },
-          '70%': { opacity: '1' },
+          '0%': {
+            transform: 'rotate(215deg) translateX(0)',
+            opacity: '1'
+          },
+          '70%': {
+            opacity: '1'
+          },
           '100%': {
             transform: 'rotate(215deg) translateX(-1000px)',
             opacity: '0'
+          }
+        },
+        loading: {
+          to: {
+            transform: 'rotate(360deg)'
+          }
+        },
+        flip: {
+          to: {
+            transform: 'rotate(360deg)'
+          }
+        },
+        rotate: {
+          to: {
+            transform: 'rotate(90deg)'
+          }
+        },
+        orbit: {
+          '0%': {
+            transform: 'rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg))'
+          },
+          '100%': {
+            transform: 'rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))'
+          }
+        },
+        ripple: {
+          '0%, 100%': {
+            transform: 'translate(-50%, -50%) scale(1)'
+          },
+          '50%': {
+            transform: 'translate(-50%, -50%) scale(0.9)'
+          }
+        },
+        blob: {
+          '0%': {
+            transform: 'translate(-50%, -50%) rotate(0deg) scale(1)'
+          },
+          '33%': {
+            transform: 'translate(-50%, -50%) rotate(120deg) scale(1.1)'
+          },
+          '66%': {
+            transform: 'translate(-50%, -50%) rotate(240deg) scale(0.9)'
+          },
+          '100%': {
+            transform: 'translate(-50%, -50%) rotate(360deg) scale(1)'
+          }
+        },
+        'image-glow': {
+          '0%': {
+            opacity: '0',
+            'animation-timing-function': 'cubic-bezier(.74, .25, .76, 1)'
+          },
+          '10%': {
+            opacity: '0.5',
+            'animation-timing-function': 'cubic-bezier(.12, .01, .08, .99)'
+          },
+          '100%': {
+            opacity: '1'
           }
         }
       },
@@ -163,7 +242,14 @@ export default {
         fifth: 'moveInCircle 20s ease infinite',
         'meteor-effect': 'meteor 5s linear infinite',
         scroll:
-          'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite'
+          'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+        loading: 'loading 0.6s linear infinite',
+        flip: 'flip 6s infinite steps(2, end)',
+        rotate: 'rotate 3s linear infinite both',
+        orbit: 'orbit calc(var(--duration)*1s) linear infinite',
+        ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite',
+        blob: 'blob 7s infinite',
+        'image-glow': 'image-glow 6s ease-out 0.6s forwards'
       }
     }
   },
@@ -195,8 +281,16 @@ export default {
   ]
 } satisfies Config
 
-function addVariablesForColors ({ addBase, theme }: { addBase: any, theme: (path: string) => Record<string, string> }) {
-  const allColors: Record<string, string> = flattenColorPalette(theme('colors'))
+function addVariablesForColors ({
+  addBase,
+  theme
+}: {
+  addBase: any
+  theme: (path: string) => Record<string, string>
+}) {
+  const allColors: Record<string, string> = flattenColorPalette(
+    theme('colors')
+  )
   const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   )
