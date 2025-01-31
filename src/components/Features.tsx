@@ -9,7 +9,7 @@ export const Features = () => {
     <div className="relative flex flex-col items-center justify-center w-full py-20" id='features'>
       <Container>
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium mt-6 text-[#8C1C03]">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mt-6 text-[#8C1C03]">
             Impulsamos tu negocio con{' '}
             <span className="text-[#F24405]">tecnología de vanguardia</span>
           </h2>

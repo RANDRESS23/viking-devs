@@ -7,12 +7,16 @@ import {
   SheetTitle,
   SheetTrigger
 } from '@/components/ui/sheet'
+import * as SheetPrimitive from '@radix-ui/react-dialog'
 import { NAV_LINKS } from '@/constants/links'
 import Link from 'next/link'
 import { IoMenu } from 'react-icons/io5'
 import { RiWhatsappFill } from 'react-icons/ri'
+import { useRouter } from 'next/navigation'
 
 const MobileMenu = () => {
+  const router = useRouter()
+
   return (
     <Sheet>
       <SheetTrigger asChild className="lg:hidden">
@@ -36,17 +40,18 @@ const MobileMenu = () => {
         </SheetHeader>
         <nav className="flex flex-col space-y-4">
           {NAV_LINKS.map((link, index) => (
-            <Link
-              key={index}
-              href={link.href}
-              className="text-base text-[#8C1C03] font-medium transition-colors hover:text-[#F24405]"
-            >
-              {link.name}
-            </Link>
+            <SheetPrimitive.Close key={index}>
+              <div
+                className="text-base text-left text-[#8C1C03] font-medium transition-colors hover:text-[#F24405]"
+                onClick={() => { router.push(link.href) }}
+              >
+                {link.name}
+              </div>
+            </SheetPrimitive.Close>
           ))}
           <div className="pt-4 mt-4 border-t border-[#8C1C03]">
             <Link href="#" className="w-full">
-              <button className="flex justify-center w-full items-center gap-2 px-4 py-2 rounded-md border border-[#8C1C03] bg-[#F24405] text-white text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+              <button className="flex justify-center w-full items-center gap-2 px-4 py-3 rounded-md border border-[#8C1C03] bg-[#F24405] text-white text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
                 Solicitar información
                 <RiWhatsappFill />
               </button>
