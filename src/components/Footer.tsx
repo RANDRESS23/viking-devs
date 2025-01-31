@@ -4,7 +4,7 @@ import { IoLogoFacebook } from 'react-icons/io'
 
 export const Footer = () => {
   return (
-    <footer className="relative w-full flex flex-col pt-20 pb-10">
+    <footer className="relative w-full flex flex-col pt-20 pb-10 font-inter-sans">
       <div className="w-full absolute left-0 bottom-0 h-[980px] md:h-[680px]">
         <img
           src="/images/footer-grid.svg"
@@ -15,12 +15,12 @@ export const Footer = () => {
 
       <div className="flex flex-col items-center relative z-10">
         <h2 className="heading lg:max-w-[45vw]">
-          ¿Listo para llevar tu negocio al <span className='text-[#fb7d19] font-extrabold italic'>siguiente nivel</span>?
+          ¿Listo para llevar tu negocio al <span className='text-[#fb7d19] font-extrabold italic'>siguiente nivel</span> ?
         </h2>
         <p className="text-[#474747] md:mt-9 my-5 text-center italic">
           Contáctanos y conversemos sobre cómo podemos transformar tus ideas en soluciones digitales que impulsen tu éxito.
         </p>
-        <button className="flex justify-center w-72 mt-5 items-center gap-2 px-4 py-3 rounded-md border border-[#171717] bg-[#fb7d19] text-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 font-semibold">
+        <button className="flex justify-center w-72 mt-5 items-center gap-2 px-4 py-3 rounded-md border border-[#171717] bg-[#fb7d19] text-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 font-semibold text-sm">
           Agendar una reunión
           <div className='text-lg'>
             <FaLocationArrow />

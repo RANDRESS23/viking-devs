@@ -44,12 +44,12 @@ export const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider my-3 text-sm md:text-lg lg:text-2xl text-[#171717]">
+          <p className="text-center md:tracking-wider my-3 text-base md:text-lg lg:text-2xl text-[#171717]">
             En <span className='text-[#fb7d19] font-bold font-norse-sans tracking-widest'>Viking Devs</span>, creamos tecnología que impulsa tu éxito empresarial.
           </p>
 
           <Link href="#">
-            <button className="flex justify-center w-72 mt-10 items-center gap-2 px-4 py-3 rounded-md border border-[#171717] bg-[#fb7d19] text-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 font-semibold">
+            <button className="flex justify-center w-72 mt-10 items-center gap-2 px-4 py-3 rounded-md border border-[#171717] bg-[#fb7d19] text-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 font-semibold text-sm">
               Agendar una reunión
               <div className='text-lg'>
                 <FaLocationArrow />
