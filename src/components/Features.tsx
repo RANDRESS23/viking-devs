@@ -9,12 +9,12 @@ export const Features = () => {
     <div className="relative flex flex-col items-center justify-center w-full py-20" id='features'>
       <Container>
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mt-6 text-[#8C1C03]">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-semibold mt-6 text-[#171717]">
             Impulsamos tu negocio con{' '}
-            <span className="text-[#F24405]">tecnología de vanguardia</span>
+            <span className="text-[#fb7d19] font-bold italic">tecnología de vanguardia</span>
           </h2>
-          <p className="text-base md:text-lg text-center mt-6 text-[#8C1C03] italic">
-            Transformamos tus ideas en soluciones digitales que generan impacto
+          <p className="text-base md:text-lg text-center mt-6 text-[#474747] italic">
+            Transformamos tus ideas en soluciones digitales que generan impacto.
           </p>
         </div>
       </Container>
@@ -25,28 +25,28 @@ export const Features = () => {
             key={feature.title}
             delay={0.1 + index * 0.1}
             className={cn(
-              'relative flex flex-col rounded-2xl lg:rounded-3xl bg-[#F24405] transition-colors',
+              'relative flex flex-col rounded-2xl lg:rounded-3xl bg-[#fb7d19] transition-colors',
               index === 3 && 'lg:col-span-2',
               index === 2 && 'md:col-span-2 lg:col-span-1'
             )}
           >
             <MagicCard
-              gradientFrom="#F24405"
-              gradientTo="#c53602"
+              gradientFrom="#fb7d19"
+              gradientTo="#e77213"
               className="p-4 lg:p-6 lg:rounded-3xl"
-              gradientColor="#fc4d0d47"
+              gradientColor="#fb7f1978"
             >
               <div className="flex items-center space-x-4 mb-4">
-                <h3 className="text-xl font-semibold flex items-center gap-2 text-[#8C1C03]">
-                  <feature.icon className="size-5 text-[#F24405]" />
+                <h3 className="text-xl font-semibold flex items-center gap-2 text-[#171717]">
+                  <feature.icon className="size-5 text-[#fb7d19]" />
                   {feature.title}
                 </h3>
               </div>
-              <p className="text-sm text-[#8C1C03]">
+              <p className="text-sm text-[#474747]">
                 {feature.description}
               </p>
 
-              <div className="mt-6 w-full bg-[#ffeebd]/50 overflow-hidden">
+              <div className="mt-6 w-full bg-[#ffffff]/50 overflow-hidden">
                 <Image
                   src={feature.image}
                   alt={feature.title}
