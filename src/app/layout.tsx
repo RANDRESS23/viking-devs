@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import NextUIProviderContext from '@/providers/NextThermesProvider'
+import { Navbar } from '@/components/Navbar'
+import { norse } from '@/constants/fonts'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -20,8 +22,9 @@ export default function RootLayout ({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans`}>
+      <body className={`${inter.variable} ${norse.variable} font-sans`}>
         <NextUIProviderContext>
+          <Navbar />
           {children}
         </NextUIProviderContext>
       </body>

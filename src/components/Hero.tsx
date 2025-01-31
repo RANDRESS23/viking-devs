@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="h-screen w-full dark:bg-[#ffeebd] bg-white dark:bg-grid-white/20 bg-grid-black-100/[0.2]
+        className="h-screen w-full dark:bg-[#ffeebd] bg-white dark:bg-grid-[#F24405]/5 bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
       >
         <div
@@ -33,19 +33,19 @@ const Hero = () => {
       <section className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <div className='flex items-center justify-center gap-2'>
-            <p className="uppercase tracking-widest text-xs text-center text-[#8C1C03] max-w-80">
-              Bienvenido a <span className='text-[#F24405] font-bold'>Viking Devs</span>
+            <p className="uppercase tracking-widest text-sm md:text-md text-center font-semibold text-[#8C1C03] max-w-80">
+              Bienvenido a <span className='text-[#F24405] font-bold font-norse-sans tracking-widest md:text-[16px]'>Viking Devs</span>
             </p>
             <Image src="/logo-viking-devs.webp" alt="Viking Devs" width={35} height={35} />
           </div>
 
           <TextGenerateEffect
-            words="Innovación web con la fuerza de un vikingo."
+            words="Innovación web con la fuerza de un vikingo"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider my-3 text-sm md:text-lg lg:text-2xl text-[#8C1C03]">
-            En <span className='text-[#F24405] font-bold'>Viking Devs</span>, creamos tecnología que impulsa tu éxito empresarial.
+            En <span className='text-[#F24405] font-bold font-norse-sans tracking-widest'>Viking Devs</span>, creamos tecnología que impulsa tu éxito empresarial
           </p>
 
           <Link href="#">
