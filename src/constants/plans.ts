@@ -12,62 +12,63 @@ export interface PLAN {
 
 export const PLANS: PLAN[] = [
   {
-    id: 'standard',
-    title: 'Standard',
-    desc: 'Perfect for solopreneurs and small teams looking to automate their content creation and social media with AI tools.',
-    monthlyPrice: 29,
+    id: 'Landing Pages',
+    title: 'Landing Pages',
+    desc: 'Diseños rápidos y efectivos para captar la atención de tus clientes.',
+    monthlyPrice: 349000,
     annuallyPrice: 306,
     buttonText: 'Upgrade to Standard',
     features: [
-      'AI content (1,000 words/mo)',
-      '3 social media channels',
-      'Basic post scheduling',
-      'Content calendar',
-      'Basic analytics dashboard',
-      '2 team members',
-      'Email support'
+      'Diseño responsive optimizado para dispositivos móviles, tablets y desktops.',
+      'Integración básica de formulario de contacto.',
+      'Tiempo de entrega rápido (7 días hábiles).',
+      'Optimización inicial de carga (imágenes comprimidas y estructura ligera).',
+      'Una sección principal y hasta 3 subsecciones.',
+      'Configuración básica de SEO (meta títulos y descripciones).'
     ],
     link: '#'
   },
   {
-    id: 'mastermind',
-    title: 'Mastermind',
-    desc: 'Ideal for growing businesses and agencies who need advanced AI capabilities and automation to scale their marketing.',
-    monthlyPrice: 79,
+    id: 'Páginas Web',
+    title: 'Páginas Web',
+    desc: 'Para empresas que buscan una presencia digital completa y profesional.',
+    monthlyPrice: 499000,
     annuallyPrice: 834,
     badge: 'Most Popular',
     buttonText: 'Upgrade to Mastermind',
     features: [
-      'AI content (10,000 words/mo)',
-      'Advanced AI copywriting',
-      'Multi-language content generation',
-      'Custom brand voice training',
-      'Custom workflow automation',
-      'Priority 24/7 support',
-      'Up to 10 team members'
+      'Diseño responsive adaptado a tu identidad de marca.',
+      'Hasta 6 secciones personalizadas (inicio, servicios, nosotros, contacto, etc.).',
+      'Formulario de contacto con validaciones avanzadas y notificaciones por correo electrónico.',
+      'Integración con redes sociales y botones de acción.',
+      'Mapa de ubicación interactivo (Google Maps).',
+      'Optimización SEO inicial (estructura de URL, palabras clave básicas).',
+      'Compatibilidad con navegadores modernos.',
+      'Certificado SSL configurado para navegación segura.',
+      'Soporte por 30 días.'
+    ],
+    link: '#'
+  },
+  {
+    id: 'Sitios Web Dinámicos',
+    title: 'Sitios Web Dinámicos',
+    desc: 'Soluciones web personalizadas para proyectos más complejos y dinámicos.',
+    monthlyPrice: 599000,
+    annuallyPrice: 834,
+    badge: 'Most Popular',
+    buttonText: 'Upgrade to Mastermind',
+    features: [
+      'Desarrollo de funcionalidades dinámicas (ej.: paneles de usuario, carritos de compra, blogs).',
+      'Integración con bases de datos y APIs externas.',
+      'Creación de formularios dinámicos y personalizados.',
+      'Soporte multiidioma (opcional).',
+      'Animaciones interactivas y transiciones personalizadas.',
+      'Optimización avanzada para SEO (estructura semántica, tiempos de carga rápidos).',
+      'Seguridad mejorada (prevención de ataques comunes, validaciones robustas).',
+      'Soporte por 60 días.'
     ],
     link: '#'
   }
-  // {
-  //     id: "enterprise",
-  //     title: "Enterprise",
-  //     desc: "Full-scale AI marketing solution for large organizations",
-  //     monthlyPrice: 199,
-  //     annuallyPrice: 2101,
-  //     badge: "Custom AI Solutions",
-  //     buttonText: "Contact Sales",
-  //     features: [
-  //         "Unlimited AI content",
-  //         "Custom AI model training",
-  //         "Advanced automation workflows",
-  //         "Multi-brand management",
-  //         "API access",
-  //         "Unlimited team members",
-  //         "24/7 priority support",
-  //         "Dedicated success manager",
-  //     ],
-  //     link: "https://stripe.com/enterprise-plan-link"
-  // }
 ]
 
 export const PLANS_FAQ = [

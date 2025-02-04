@@ -1,6 +1,14 @@
 export const NAV_LINKS = [
   {
-    name: 'Nuestro Enfoque',
+    name: 'Nosotros',
+    href: '#about'
+  },
+  {
+    name: 'Enfoque',
     href: '#features'
+  },
+  {
+    name: 'Planes',
+    href: '#pricing'
   }
 ]
