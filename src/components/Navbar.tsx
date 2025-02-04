@@ -29,17 +29,9 @@ export const Navbar = () => {
             </ul>
           </div>
 
-          {/* <div className="flex items-center gap-4 md:pl-32">
-            <Link href="#" className="hidden lg:block">
-              <button className="flex justify-center items-center gap-2 px-3 py-2 rounded-md border border-[#171717] bg-[#fb7d19] text-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 text-xl">
-                <RiWhatsappFill />
-              </button>
-            </Link>
-            <MobileMenu />
-          </div> */}
           <div className="md:pl-12 md:w-48">
             <a
-              href="https://wa.me/+573228372899"
+              href="https://wa.me/message/JE3JHGELREIUP1"
               target="_blank"
               rel="noopener noreferrer"
               className="group items-center justify-center bg-[#fb7d19] text-white p-2 rounded-lg transform rotate-2 hover:rotate-0 transition-all duration-300 shadow-lg hover:shadow-xl hidden lg:flex"

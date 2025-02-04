@@ -90,13 +90,13 @@ export function MagicCard ({
         }}
       />
       <motion.div
-        className="pointer-events-none absolute inset-0 rounded-xl bg-[#171717] duration-300 group-hover:opacity-100"
+        className="pointer-events-none absolute inset-0 rounded-xl bg-[#c2c0c0d2] duration-300 group-hover:opacity-100"
         style={{
           background: useMotionTemplate`
         radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px,
           ${gradientFrom}, 
           ${gradientTo}, 
-          #171717 100%
+          #c2c0c0d2 100%
         )
       `
         }}

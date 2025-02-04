@@ -1,7 +1,8 @@
 import { Hero } from '@/components/Hero'
 import { Features } from '@/components/Features'
 import { Footer } from '@/components/Footer'
-// import { Pricing } from '@/components/Pricing'
+import { Pricing } from '@/components/Pricing'
+import { About } from '@/components/About'
 // import { CTA } from '@/components/Cta'
 
 export default function Home () {
@@ -10,8 +11,9 @@ export default function Home () {
       <section className="max-w-7xl w-full">
         {/* <FloatingNav navItems={navItems} /> */}
         <Hero />
+        <About />
         <Features />
-        {/* <Pricing /> */}
+        <Pricing />
         {/* <CTA /> */}
 
         {/* <Grid /> */}

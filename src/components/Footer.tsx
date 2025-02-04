@@ -14,7 +14,7 @@ export const Footer = () => {
       </div>
 
       <div className="flex flex-col items-center relative z-10">
-        <h2 className="heading lg:max-w-[45vw]">
+        <h2 className="heading lg:max-w-[47vw]">
           ¿Listo para llevar tu negocio al <span className='text-[#fb7d19] font-extrabold italic'>siguiente nivel</span> ?
         </h2>
         <p className="text-[#474747] md:mt-9 my-5 text-center italic">

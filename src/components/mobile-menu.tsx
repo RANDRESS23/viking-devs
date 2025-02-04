@@ -65,7 +65,7 @@ const MobileMenu = () => {
             </div>
             <div className='w-full flex justify-center mt-2'>
               <a
-                href="https://wa.me/+573228372899"
+                href="https://wa.me/message/JE3JHGELREIUP1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group items-center justify-center bg-[#fb7d19] text-white p-3 rounded-lg transform rotate-2 hover:rotate-0 transition-all duration-300 shadow-lg hover:shadow-xl w-full flex"
