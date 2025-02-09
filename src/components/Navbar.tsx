@@ -12,8 +12,8 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/logo-viking-devs.webp" alt="Viking Devs" width={30} height={30} />
-              <span className="text-3xl tracking-widest font-bold text-[#fb7d19] font-norse-sans">
+              <Image src="/logo-viking-devs.webp" alt="Logo Viking Devs" width={30} height={30} />
+              <span className="text-3xl tracking-widest font-bold text-[#ff5500] font-norse-sans">
                 VIKING DEVS
               </span>
             </Link>
@@ -34,7 +34,7 @@ export const Navbar = () => {
               href="https://wa.me/message/JE3JHGELREIUP1"
               target="_blank"
               rel="noopener noreferrer"
-              className="group items-center justify-center bg-[#fb7d19] text-white p-2 rounded-lg transform rotate-2 hover:rotate-0 transition-all duration-300 shadow-lg hover:shadow-xl hidden lg:flex"
+              className="group items-center justify-center bg-[#ff5500] text-white p-2 rounded-lg transform rotate-2 hover:rotate-0 transition-all duration-300 shadow-lg hover:shadow-xl hidden lg:flex"
             >
               <div className="relative overflow-hidden">
                 <div className="absolute inset-0 bg-white opacity-20 transform -skew-x-12"></div>

@@ -44,7 +44,7 @@ const MobileMenu = () => {
           {NAV_LINKS.map((link, index) => (
             <SheetPrimitive.Close key={index}>
               <div
-                className="text-base text-left text-[#171717] font-medium transition-colors hover:text-[#fb7d19]"
+                className="text-base text-left text-[#171717] font-medium transition-colors hover:text-[#ff5500]"
                 onClick={() => { router.push(link.href) }}
               >
                 {link.name}
@@ -53,13 +53,13 @@ const MobileMenu = () => {
           ))}
           <div className="pt-4 mt-4 border-t border-[#171717]">
             <div className="flex items-center justify-center md:gap-4 gap-6 mb-5">
-              <Link href='https://www.facebook.com/share/19ubPprnrv/?mibextid=wwXIfr' target='_blank' className='text-[#171717] hover:text-[#fb7d19] text-4xl transition-all duration-200'>
+              <Link href='https://www.facebook.com/share/19ubPprnrv/?mibextid=wwXIfr' target='_blank' className='text-[#171717] hover:text-[#ff5500] text-4xl transition-all duration-200'>
                 <IoLogoFacebook />
               </Link>
-              <Link href='https://www.instagram.com/vikingdevs?igsh=MTBtN2xxZDMwNzBiYQ==' target='_blank' className='text-[#171717] hover:text-[#fb7d19] text-3xl transition-all duration-200'>
+              <Link href='https://www.instagram.com/vikingdevs?igsh=MTBtN2xxZDMwNzBiYQ==' target='_blank' className='text-[#171717] hover:text-[#ff5500] text-3xl transition-all duration-200'>
                 <FaInstagram />
               </Link>
-              <Link href='http://www.tiktok.com/@VikingDevs0' target='_blank' className='text-[#171717] hover:text-[#fb7d19] text-[27px] transition-all duration-200'>
+              <Link href='http://www.tiktok.com/@VikingDevs0' target='_blank' className='text-[#171717] hover:text-[#ff5500] text-[27px] transition-all duration-200'>
                 <FaTiktok />
               </Link>
             </div>
@@ -68,7 +68,7 @@ const MobileMenu = () => {
                 href="https://wa.me/message/JE3JHGELREIUP1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group items-center justify-center bg-[#fb7d19] text-white p-3 rounded-lg transform rotate-2 hover:rotate-0 transition-all duration-300 shadow-lg hover:shadow-xl w-full flex"
+                className="group items-center justify-center bg-[#ff5500] text-white p-3 rounded-lg transform rotate-2 hover:rotate-0 transition-all duration-300 shadow-lg hover:shadow-xl w-full flex"
               >
                 <div className="relative overflow-hidden">
                   <div className="absolute inset-0 bg-white opacity-20 transform -skew-x-12"></div>
