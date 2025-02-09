@@ -20,12 +20,14 @@ export const Footer = () => {
         <p className="text-[#474747] md:mt-9 my-5 text-center italic">
           Contáctanos y conversemos sobre cómo podemos transformar tus ideas en soluciones digitales que impulsen tu éxito.
         </p>
-        <button className="flex justify-center w-72 mt-5 items-center gap-2 px-4 py-3 rounded-md border border-[#171717] bg-[#fb7d19] text-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 font-semibold text-sm">
-          Agendar una reunión
-          <div className='text-lg'>
-            <FaLocationArrow />
-          </div>
-        </button>
+        <Link href="https://wa.me/message/JE3JHGELREIUP1" target="_blank" rel="noopener noreferrer">
+          <button className="flex justify-center w-72 mt-5 items-center gap-2 px-4 py-3 rounded-md border border-[#171717] bg-[#fb7d19] text-white hover:scale-95 shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 font-semibold text-sm">
+            Agendar una reunión
+            <div className='text-lg'>
+              <FaLocationArrow />
+            </div>
+          </button>
+        </Link>
       </div>
       <div className="flex mt-[85px] md:mt-16 md:flex-row flex-col justify-between items-center relative z-10">
         <p className="md:text-base text-sm md:font-normal font-light">

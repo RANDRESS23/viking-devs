@@ -48,8 +48,8 @@ export const Hero = () => {
             En <span className='text-[#fb7d19] font-bold font-norse-sans tracking-widest'>Viking Devs</span>, creamos tecnología que impulsa tu éxito empresarial.
           </p>
 
-          <Link href="#">
-            <button className="flex justify-center w-72 mt-10 items-center gap-2 px-4 py-3 rounded-md border border-[#171717] bg-[#fb7d19] text-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 font-semibold text-sm">
+          <Link href="https://wa.me/message/JE3JHGELREIUP1" target="_blank" rel="noopener noreferrer">
+            <button className="flex justify-center w-72 mt-10 items-center gap-2 px-4 py-3 rounded-md border border-[#171717] bg-[#fb7d19] text-white hover:scale-95 shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200 font-semibold text-sm">
               Agendar una reunión
               <div className='text-lg'>
                 <FaLocationArrow />
