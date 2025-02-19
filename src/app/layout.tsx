@@ -22,6 +22,9 @@ export default function RootLayout ({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <meta name="google-site-verification" content="AmfLiOwqfqIcm618xSH3OzCROmBeVz5i0sodrPxegYY" />
+      </head>
       <body className={`${inter.variable} ${norse.variable} font-sans`}>
         <NextUIProviderContext>
           <Navbar />
